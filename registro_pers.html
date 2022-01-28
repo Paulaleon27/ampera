@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Personas | Ampera</title>
+		<meta name="description" content="Responsive Retina-Friendly Menu with different, size-dependent layouts" />
+		<meta name="keywords" content="responsive menu, retina-ready, icon font, media queries, css3, transition, mobile" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/modal.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<section id='openmodal' class='modalDialog1'>
+			<section class='modal1'>
+				<h2>Por favor ingresa tu C.C/NIT.:</h2>
+				<center>(Sin puntos ni comas)</center>
+				<h1></h1>
+				<center>
+				<input type="number" name="validar_cc" required="required" placeholder="Número identificación">
+				<input type="number"  name="validar_dv" required="required" placeholder="Dígito verificación">
+				<br>
+				<a href='#close'><button class="button1">CANCELAR</button></a><a href="f_venta.html"><button class="button2">SIGUIENTE</button></a> 
+				</center>
+			</section>
+		</section>
+		<h1>
+		<div class="flotante">
+			<a href="index.html">
+				<span class="icon1 tooltip"> 
+					<span class="tooltip1">Inicio</span>
+					<i aria-hidden="true" class="icon-home"></i>	<!-- Inicio -->
+				</span>
+			</a>
+			<br>
+			<a href="index.html">
+				<span class="icon1 tooltip">
+					<span class="tooltip1">Compras</span> 
+					<i aria-hidden="true" class="icon-box-add"></i>	<!-- Compras -->
+				</span>
+			</a>
+			<br>
+			<a href="#openmodal" class="open">
+				<span class="icon1 tooltip"> 
+					<span class="tooltip1">Ventas</span>
+					<i aria-hidden="true" class="icon-box-remove"></i>	<!-- Ventas -->
+				</span>
+			</a>
+			<br>
+			<a href="menu_i.html">
+				<span class="icon1 tooltip"> 
+					<span class="tooltip1">Informes</span> 
+					<i aria-hidden="true" class="icon-books"></i>		<!-- Informes -->
+				</span>
+			</a>
+			<br>
+			<a href="index.html">
+				<span class="icon1 tooltip">
+					<span class="tooltip1">Configuración</span> 
+					<i aria-hidden="true" class="icon-cog"></i>		<!-- Configuración -->
+				</span>
+			</a>
+			<br>
+		</div>
+	</h1>
+		<div class="container">	
+			<!-- Codrops top bar -->
+			<header>
+				<h2>REGISTRO PERSONAS</h2> 	
+			</header>
+			<div class="main clearfix">
+
+				<form  name="registro" method="post" action="php/insert_pers.php">
+				  <label><br>C.C./NIT.*:</label><br>
+                  <input type="textarea" id="wid" name="wid" required="required" placeholder="Escribe tu número de identificación" value="" style="width: 69.5%;" /> 
+                  <input type="textarea" id="wdig" name="wdig" placeholder="Escribe tu dígito de verificación" value="" style="width: 30%;"/> 
+
+                  <label><br>Nombre Completo*:</label>
+                  <input type="textarea" id="wnom" name="wnom" required="required" placeholder="Escribe tu nombre" value="" /> 
+
+
+                  <label><br>Dirección*:</label>
+                  <input type="textarea" id="wdir" name="wdir"  required="required" placeholder="Escribe tu dirección de residencia" value="">
+                  
+                  <label><br>Ciudad*:</label>
+                  <input type="textarea" id="wciu" name="wciu" required="required" placeholder="Escribe tu ciudad de residencia" 
+                  value="">
+
+                  <label><br>Celular:</label>
+                   <input type="number" id="wcel" name="wcel" min="1111111111" max="9999999999" placeholder="Escribe tu celular" 
+                  value="">
+
+                  <label><br>Teléfono:</label>
+                   <input type="number" id="wtel" name="wtel" min="1111111" max="9999999" placeholder="Escribe tu teléfono" 
+                  value="">
+
+                  <label><br>Correo electrónico:</label>
+                   <input type="email" id="wmail" name="wmail" placeholder="Escribe tu email" 
+                  value="">
+					<div class="radio">
+						<h2>Tipo*:</h2>
+						<input type="radio" required="required" name="tipo" id="cliente" value="cliente">
+						<label for="cliente">Cliente</label>
+				
+						<input type="radio" name="tipo" id="proveedor" value="proveedor">
+						<label for="proveedor">Proveedor</label>
+					</div>
+                  <br>
+                  <input class="button" type="submit" value="REGISTRAR">
+                </form>
+			</div>
+		</div><!-- /container -->
+	</body>
+</html>

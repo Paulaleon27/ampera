@@ -1,0 +1,92 @@
+/* contenedor de afuera de la pagina*/
+section.modalDialog1{
+    background: rgba(0,0,0,0.8);
+    bottom: 0;
+    top: 0;
+    left: -25%;
+    right: 0;
+    opacity: 0;
+    position: fixed;
+    z-index: 11;
+    -webkit-transition: opacity 1s;
+    width: auto;
+    height: auto;
+    visibility: hidden;
+}
+
+/* opacidad del contenedor externo*/
+section.modalDialog1:target{
+	opacity: 2;
+	visibility:visible;
+}
+/*contenido de la ventana modal*/
+section.modal1{
+	background-color: #fff;
+	box-shadow: 0px 0px 10px #000;
+	border-radius: 5px;
+	color: #414141;
+	margin: 10px auto;
+	padding: 5px;
+	position: relative;
+    width: 55%;        /* Ancho */
+    top:29%;    /* Espacio de arriba */
+}
+section.modal1 h2{
+    text-align: center;
+    color: #000;
+
+}
+/* Campo para ingresar la cédula o el NIT */
+section.modal1 input[type="number"]{
+    border: 2px solid #000;
+    width: 35%;
+    margin: 0 0;   /* (1)Espacio de arriba (2)Mover hacia los lados */
+    font-size: 25px;
+    /*height: 0;*/
+    /*left: 10%*/;
+    text-align: center;
+}
+/********* ESTO HACE QUE NO APAREZCAN LAS FLECHITAS *********/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/******* FIN-ESTO HACE QUE NO APAREZCAN LAS FLECHITAS *******/
+
+/******* BOTONES VENTANA EMERGENTE *******/
+section.modal1 .button1 {       /* Botón CANCELAR */
+    width: 27%;
+    background-color: #000041;
+    color: #ffffff !important;
+    margin: 2%;
+    padding: 1.8%;  /* (1)Ancho del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+section.modal1 .button2 {       /* Botón SIGUIENTE */
+    width: 27%;     /* Largo */
+    background-color: #000041;
+    color: #ffffff !important;
+    margin: 1% 2.6%;        /* (1)Mover hacia arriba y abajo (2)Mover hacia los lados */
+    padding: 1.8%;      /* (1)Ancho del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+section.modal1 .button1:hover,
+section.modal1 .button2:hover {
+    background: #000023;
+}
+/******* FIN-BOTONES VENTANA EMERGENTE *******/
+
+/***************** X Del modal (Informe venta) *****************/
+
+section.modalDialog2 .modal2, a.x {
+    position: right;
+    background: #ff0000; 
+    color: #ff0000;
+}
+
+/***************** FIN-X Del modal (Informe venta) *****************/

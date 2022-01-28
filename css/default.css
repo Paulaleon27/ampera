@@ -1,0 +1,767 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 15px; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #000000;
+	background: #f2f2f2;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000042;
+}
+
+.main,
+.container > header {
+	width: 100%;
+	margin: 0 auto;
+	padding: 2em;
+}
+
+.container > header {
+	text-align: center;
+	font-size: 20px;
+	padding: 4em 2em 3em;
+}
+
+/* Propiedades del título de la página */
+.container > header h1 {
+	font-size: 2.625em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;
+}
+
+/* Propiedades del subtítulo de la página */
+/*.container > header span {
+	display: block;
+	font-size: 60%;
+	color: #000000;
+	padding: 0 0 0.6em 0.1em;
+}*/
+
+/* Header Style */
+.codrops-top {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.4);
+	text-transform: uppercase;
+	position: relative;
+	width: 100%;
+	font-size: 0.7em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	color: #888;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.9);
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+.codrops-icon-archive:before {
+	content: "\e002";
+}
+.codrops-icon-next:before {
+	content: "\e000";
+}
+.codrops-icon-about:before {
+	content: "\e003";
+}
+
+@media screen and (max-width: 25em) { 
+	.codrops-icon span {
+		display: none;
+	}
+	.container > header {
+		font-size: 75%;
+	}
+}
+
+.main {			/* Contenedor de la factura */
+	max-width: 85%;		/* Ancho */
+	min-height: auto;		/* Largo */
+	background: #ffffff;	/* Color de fondo */
+}
+.main1 {			/* Contenedor de la factura */
+	max-width: 80em;		/* Ancho */
+	min-height: auto;		/* Largo */
+	background: #ffffff;	/* Color de fondo */
+}
+
+table{
+	border: solid 1px #000000;		/* Borde de la tabla */
+	width: 100%;					/* Ancho */
+	left: auto;						/* Largo */
+	border-radius: 10px;
+	border-spacing: 0; 
+}
+
+table tr{
+	border: solid 1px #000000;
+}
+
+table td{
+	border: solid 1px #000000;
+}
+.consec{
+	background: #ffffff;
+	text-align: center;
+	font-size: 130%;
+	border: solid 1px #000000;
+	border-radius: 7px;
+	border-top-right-radius: 0;				/* Superior derecho */
+	border-top-left-radius: 0;				/* Superior izquierdo */
+	border-bottom-left-radius: 0;			/* Inferior izquierdo */
+}
+.consec span{		/* Consecutivo de la factura */
+	color: #ff0000 ;
+}
+.superiorizquierdo {
+	border-top-left-radius: 7%;
+}
+.inferiorizquierdo {
+	border-bottom-left-radius: 7px;
+}
+.superiorderecho {
+	border-top-right-radius: 7px;
+}
+.inferiorderecho {
+	border-bottom-right-radius: 7px;
+}	
+.inferiorizquierdotabla {
+	border-bottom-left-radius: 9px;
+}
+.superiorizquierdotabla  {
+	border-top-left-radius: 9px;
+}
+.superiorderechotabla  {
+	border-top-right-radius: 9px;
+}
+.inferiorderechotabla  {
+	border-bottom-right-radius: 9px;
+}
+.correr {
+	/*float: left;
+	margin-left: 65.5%;
+	margin-top: -7.8%;*/
+}
+.colcant {
+	background: #d8d8d3;
+	text-align: center;
+}
+.colvaltotal {
+	background: rgba(227,140,48,0.62);
+	text-align: center;
+}
+.coltitles {
+	background: #e23030;
+	color: #fff;
+	text-align: center;
+}
+.centrado {
+	text-align: center;
+}
+.tabla {
+	border: solid 0;	
+}
+.lineaabajo {
+	border-bottom: 0;
+}
+.lineaarriba {
+	border-top: 0;
+}
+.widthart{
+	width: 60%;
+}
+.anchotabla{
+	width: 65%;
+}
+.tabla4{
+	width: 34.5%;
+	border: 0;
+}
+.primeracolumna{
+	color: #ffffff;
+	background: #e23030;
+	text-align: center;
+	font-size: 20px;
+	width: 56%;
+	border: 10px;
+}
+.segundacolumna{
+	color: #000;
+	background: #d8d8d3;
+	text-align: center;
+	font-size: auto;
+	border: 0;
+}
+.bordeabajo{
+	border-bottom: solid #ffffff;
+	border-left: solid 1px #ffffff;
+	border-right: solid 1px #ffffff;
+}
+.borde{
+	border-left: solid 0;
+	border-right: solid 0;
+	border-bottom: solid 0;
+}
+
+input[type="submit"],
+.button {
+          width: 100%;
+          background-color: #000041;
+          color: #ffffff !important;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+      .button:hover {
+          background-color: #000023;
+          box-shadow: inset 0 0 0 1px #ffffff;
+          color: #ffffff !important;
+      }
+
+/************** CAJAS TE TEXTO **************/
+
+/* PRIMERA PARTE DE LA FACTURA */
+	input[type="text"]{
+		width: 100%;
+		font-size: auto;
+		background-color: #ffffff;
+		color: #000 !important;
+		padding: 14px 20px;
+		width: 45%;
+		left: auto;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	input[type="text"]:hover {
+		background-color: #ffffff;
+		box-shadow: inset 0 0 0 1px #ffffff;
+		color: #000 !important;
+	}
+
+	.cc-nit .cc-nit1{
+		width: 100%;
+		font-size: auto;
+		background-color: #ffffff;
+		color: #000 !important;
+		padding: 14px 20px;
+		width: 45%;
+		left: auto;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	.primero .cc-nit .cc-nit1:hover {
+		background-color: #ffffff;
+		box-shadow: inset 0 0 0 1px #ffffff;
+		color: #000 !important;
+	}
+
+	.nom_cliente .nom_cliente1{
+		width: 100%;
+		font-size: auto;
+		background-color: #ffffff;
+		color: #000 !important;
+		padding: 14px 20px;
+		width: 85%;
+		left: auto;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	.nom_cliente .nom_cliente1:hover {
+		background-color: #ffffff;
+		box-shadow: inset 0 0 0 1px #ffffff;
+		color: #000 !important;
+	}
+
+	.tel_cliente .tel_cliente1{
+		width: 100%;
+		background-color: #ffffff;
+		color: #000 !important;
+		padding: 14px 20px;
+		width: 70%;
+		left: auto;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	.tel_cliente .tel_cliente1:hover {
+		background-color: #ffffff;
+		box-shadow: inset 0 0 0 1px #ffffff;
+		color: #000 !important;
+	}
+
+	.dir_cliente .dir_cliente1{
+		width: 100%;
+		background-color: #ffffff;
+		color: #000 !important;
+		padding: 14px 20px;
+		width: 82%;
+		left: auto;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	.dir_cliente .dir_cliente1:hover {
+		background-color: #ffffff;
+		box-shadow: inset 0 0 0 1px #ffffff;
+		color: #000 !important;
+	}
+
+	.for_pago .for_pago1{
+		width: 100%;
+		background-color: #ffffff;
+		color: #000 !important;
+		padding: 14px 20px;
+		width: 60%;
+		left: auto;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	.for_pago .for_pago1:hover {
+		background-color: #ffffff;
+		box-shadow: inset 0 0 0 1px #ffffff;
+		color: #000 !important;
+	}
+	/* FIN-PRIMERA PARTE DE LA FACTURA */
+	/************** FIN-CAJAS TE TEXTO **************/
+
+
+
+	label {
+		text-align: center;
+		font-size: 20px;
+		padding: 0em 0em 0em;
+	}
+	input[type="textarea"],
+	input[type="number"],
+	input[type="email"]{
+		width: 100%;
+		background-color: #f2f2f2;
+		color: #000 !important;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		font-size: 100%;
+	}
+	input[type="textarea"]:hover,
+	input[type="number"]:hover,
+	input[type="email"]:hover {
+		background-color: #f8f8f8;
+		box-shadow: inset 0 0 0 1px #000041;
+		color: #000 !important;
+	}
+
+/* MENÚ DE LOS INFORMES */
+/*
+@media (min-width: 58.01em){
+.cuadros {
+	width: 100%;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+.cuadro {
+	width: 200px;
+	height: 200px;
+	float: left;
+	font-size: 100%;
+	color: white;
+}
+
+.cuadro1 {
+	width: 200px;
+	height: 200px;
+	margin: 18.4% 0 0 8%;
+	float: left;
+	font-size: 100%;
+	color: white;
+}
+
+.cuadro2 {
+	width: 200px;
+	height: 200px;
+	margin: 0 0 0 8%;
+	float: left;
+	font-size: 100%;
+	color: white;
+}
+
+.cuadro3 {
+	width: 200px;
+	height: 200px;
+	margin: 18.4% 0 0 8%;
+	float: left;
+	font-size: 100%;
+	color: white;
+}
+}
+
+
+@media (min-width: 38.01em) and (max-width: 58em){
+.cuadros {
+	width: 100%;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+.cuadro {
+	width: 200px;
+	height: 200px;
+	font-size: 100%;
+	color: white;
+}
+
+.cuadro1 {
+	width: 200px;
+	height: 200px;
+	margin: 0 0 0 0;
+	font-size: 100%;
+	color: white;
+}
+
+.cuadro2 {
+	width: 200px;
+	height: 200px;
+	margin: -400px 0 0 0;
+	float: right;
+	font-size: 100%;
+	color: white;
+}
+
+.cuadro3 {
+	width: 200px;
+	height: 200px;
+	margin: -31% 0 0 0;
+	float: right;
+	font-size: 100%;
+	color: white;
+}
+}
+*/
+
+/*@media (max-width: 38em) {*/
+
+	/* Size and font adjustments to make it fit into the screen*/
+	/*.cuadros {
+	width: 100%;
+	margin: 0 0 0 0;
+	float: left;
+}
+
+.cuadro {
+	width: 200px;
+	height: 200px;
+	font-size: 100%;
+	color: white;
+}
+.cuadro1 {
+	width: 200px;
+	height: 200px;
+	font-size: 100%;
+	color: white;
+}
+.cuadro2 {
+	width: 200px;
+	height: 200px;
+	font-size: 100%;
+	color: white;
+}
+.cuadro3 {
+	width: 200px;
+	height: 200px;
+	background: #000;
+	font-size: 100%;
+	color: white;
+}
+}*/
+/* FIN-MENÚ DE LOS INFORMES */
+
+/*.nav1 {
+	font-size: 4em;
+	padding: 60px 70px;
+}
+.cuadro {
+	background: rgba(0,0,65,1);
+}
+.cuadro1 {
+	background: rgba(0,0,45,1);
+}
+.cuadro2 {
+	background: rgba(0,0,25,1);	
+}
+.cuadro3 {
+	background: rgba(0,0,05,1);	
+}*/
+section, .con {
+	margin: 0 0 0 0;
+}
+
+.descuento .descuento_d {
+	width: 10.1%;
+}
+
+/******* RADIO BUTTONS *******/
+.radio label {
+    display: inline-block;
+    cursor: pointer;
+    color: #000;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 110%;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+.radio label:hover {
+    background: rgba(0, 0, 65, 0.1); 
+}
+.radio label:before {	/* Poder agregar antes del label/Agrega el círculo */
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 3px solid #000041; 
+}
+.radio input[type="radio"] {
+   display: none; 
+}
+.radio input[type="radio"]:checked + label:before {
+	display: none;
+}
+ .radio input[type="radio"]:checked + label {
+  padding: 5px 15px;
+  background: #000041;
+  border-radius: 2px;
+  color: #fff; 
+}
+/******* FIN-RADIO BUTTONS *******/
+
+/******* SUB-MENÚ *******/
+.flotante {
+    display:scroll;
+    position:fixed;
+    bottom:50%;
+    right:0px;
+}
+.tooltip {
+	position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/	/* Línea debajo */
+}
+.tooltip .tooltip1 {
+    visibility: hidden;
+    width: 100px;
+    background-color: #333333;
+    color: #fff;
+    font-size: 50%;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 105%;
+}
+ .tooltip:hover .tooltip1 {
+    visibility: visible;
+    opacity: 1;
+}
+.flotante_confi {
+    display:scroll;
+    position:fixed;
+    bottom:55%;
+    left: 5px;
+}
+.tooltip_confi {
+	position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/	/* Línea debajo */
+}
+.tooltip_confi .tooltip1_confi {
+    visibility: hidden;
+    width: 100px;
+    background-color: #333333;
+    color: #fff;
+    font-size: 50%;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: -340%;
+}
+ .tooltip_confi:hover .tooltip1_confi {
+    visibility: visible;
+    opacity: 1;
+}
+/******* FIN-SUB-MENÚ *******/
+
+input[type='button'],
+.button1 {
+	width: 20%;
+    background-color: #000041;
+    color: #ffffff !important;
+    margin: 2%;
+    padding: 1.8%;  /* (1)Ancho del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}      
+	.button1:hover {
+          background-color: #000023;
+          box-shadow: inset 0 0 0 1px #ffffff;
+          color: #ffffff !important;
+      }
+
+/************** PÀGINA FACTURA (TABLA: CANT, ARTÍCULO, VAL-UNI, VAL-TOTAL) **************/
+/* Input de la cantidad */
+/*input[type='number'], .canti{
+	background: #d8d8d3;
+	font-size: 17px;
+	width: 100px;
+}
+input[type='number']:hover, .canti{
+	background: #d8d8d3;
+}*/
+/* Fin - Input de la cantidad */
+/* CSS del combo */
+.select{
+	background: #ffffff;
+	font-size: 17px;
+	width: 50%;
+	height: 45%;
+}
+/* Fin - CSS del combo */
+/* Input del valor unitario */
+/*input[type='number'], .val_uni{
+	background: #ff0000;
+	font-size: 17px;
+	width: 100px;
+}
+input[type='number']:hover, .val_uni{
+	background: #ff0000;
+}*/
+/* Fin - Input del valor unitario */
+
+/* Casilla cantidad */
+.canti{
+	width: 20%;
+	background: #ff0000;
+}
+/* Fin - Casilla cantidad */
+
+/************** FIN - PÀGINA FACTURA (TABLA: CANT, ARTÍCULO, VAL-UNI, VAL-TOTAL) **************/
+
+/******************* PÁGINA confi_parametros.php TEXTAREA *******************/
+textarea{
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	background: #f2f2f2;
+	font-size: 17px;
+	color: #000;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+}
+.wnota{
+	width: 100%;
+	height: 95px;
+}
+.wauto{
+	width: 100%;
+	height: 80px;
+}
+.select1{
+	background: #f2f2f2;
+	font-size: 17px;
+	width: 25%;
+	height: 45%;
+	left: auto;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+ 	appearance: none;
+}
+/******************* FIN - PÁGINA confi_parametros.php TEXTAREA *******************/

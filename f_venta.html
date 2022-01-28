@@ -1,0 +1,280 @@
+<!-- Página factura de venta -->
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Factura de venta | Ampera</title>
+		<meta name="description" content="Responsive Retina-Friendly Menu with different, size-dependent layouts" />
+		<meta name="keywords" content="responsive menu, retina-ready, icon font, media queries, css3, transition, mobile" />
+		<meta name="author" content="Codrops" /> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/modal.css" />
+	</head>
+	<body>  
+		<section id='openmodal' class='modalDialog1'>
+			<section class='modal1'>
+				<h2>Por favor ingresa tu C.C/NIT.:</h2>
+				<center>(Sin puntos ni comas)</center>
+				<h1></h1>
+				<center>
+				<input type="number" name="validar_cc" required="required" placeholder="Número identificación">
+				<input type="number"  name="validar_dv" required="required" placeholder="Dígito verificación">
+				<br>
+				<a href='#close'><button class="button1">CANCELAR</button></a> 
+				<a href="f_venta.html"><button class="button2">SIGUIENTE</button></a> 
+				</center>
+			</section>
+		</section>
+		<h1>
+		<div class="flotante">
+			<a href="index.html">
+				<span class="icon1 tooltip"> 
+					<span class="tooltip1">Inicio</span>
+					<i aria-hidden="true" class="icon-home"></i>	<!-- Inicio -->
+				</span>
+			</a>
+			<br>
+			<a href="index.html">
+				<span class="icon1 tooltip">
+					<span class="tooltip1">Compras</span> 
+					<i aria-hidden="true" class="icon-box-add"></i>	<!-- Compras -->
+				</span>
+			</a>
+			<br>
+			<a href="#openmodal" class="open">
+				<span class="icon1 tooltip"> 
+					<span class="tooltip1">Ventas</span>
+					<i aria-hidden="true" class="icon-box-remove"></i>	<!-- Ventas -->
+				</span>
+			</a>
+			<br>
+			<a href="menu_i.html">
+				<span class="icon1 tooltip">
+					<span class="tooltip1">Informes</span> 
+					<i aria-hidden="true" class="icon-books"></i>		<!-- Informes -->
+				</span>
+			</a>
+			<br>
+			<a href="registro_pers.html">
+				<span class="icon1 tooltip"> 
+					<span class="tooltip1">C/P</span>
+					<i aria-hidden="true" class="icon-users"></i>		<!-- Cliente/Proveedor -->
+				</span>
+			</a>
+			<br>
+			<a href="index.html">
+				<span class="icon1 tooltip"> 
+					<span class="tooltip1">Configuración</span>
+					<i aria-hidden="true" class="icon-cog"></i>		<!-- Configuración -->
+				</span>
+			</a>
+			<br>
+		</div>
+	</h1>
+		<div class="container">	
+			<!-- Codrops top bar -->
+
+			<header>
+				<h2>FACTURA DE VENTA</h2>
+			</header>
+			<div class="main clearfix">
+				<div class="main1">
+					<!-- PRIMERA PARTE DE LA FACTURA -->
+			        <table class="superiorizquierdotabla inferiorizquierdotabla inferiorderechotabla superiorderechotabla">
+			            <tr class="superiorizquierdo inferiorizquierdo inferiorderecho superiorderecho centrado">								<!-- Fila#1 -->
+			                <td class="superiorizquierdo"><B>Fecha Elaboración:</B> 
+			                	<input type="text" name="fecha_e1" placeholder="dd/mm/aaaa"> 
+			                </td>		<!-- Columna#1 -->
+			                <td><B>Fecha Vencimiento: </B>
+			                	<input type="text" name="fecha_v1" placeholder="dd/mm/aaaa">
+			                </td>			<!-- Columna#2 -->
+			                <td><B>C.C./NIT. </B>
+			                	<input class="cc-nit1" type="text" name="cc-nit1" placeholder="Cédula o NIT">
+			                </td>					<!-- Columna#3 -->
+			                <td class="coltitles superiorderecho"><B>FACTURA DE VENTA</B></td>			<!-- Columna#4 -->
+			            </tr>												<!-- Fin-Fila#1 -->
+			            <tr class="superiorizquierdo inferiorizquierdo inferiorderecho superiorderecho centrado">								<!-- Fila#2 -->
+			                <td colspan="2" class="nom_cliente"><B>Cliente: </B>
+			                	<input type="text" name="nom_cliente" class="nom_cliente1"  placeholder="Nombre del cliente">
+			                </td>		
+			                <td class="tel_cliente"><B>Teléfono: </B>
+			                	<input type="text" name="tel_cliente" class="tel_cliente1"  placeholder="Teléfono del cliente">
+			                </td>
+			                <td rowspan="2" class="consec">
+			                	<B>A</B> 
+			                	<span>1768</span>
+			                </td>
+			            </tr>												<!-- Fin-Fila#2 -->
+			            <tr class="superiorizquierdo inferiorizquierdo inferiorderecho superiorderecho centrado">								<!-- Fila#3 -->
+			                <td colspan="2" class="dir_cliente inferiorizquierdo"><B>Dirección: </B>
+			                	<input type="text" name="dir_cliente" class="dir_cliente1"  placeholder="Dirección del cliente">
+			                </td>
+			                <td class="for_pago"><B>Forma de pago:</B>
+			                	<input type="text" name="for_pago" class="for_pago1"  placeholder="Forma de pago">
+			                </td>
+			            </tr>												<!-- Fin-Fila#3 -->
+			        </table>
+			        <!-- FIN-PRIMERA PARTE DE LA FACTURA -->
+			        <br>
+			        <!-- TERCERA PARTE DE LA FACTURA -->
+			        <table class="tabla">
+			            <tr class="superiorizquierdo inferiorizquierdo inferiorderecho superiorderecho coltitles centrado">
+			            	<td class="superiorizquierdo inferiorizquierdo">Cant.</td>
+			            	<td>ARTÍCULO</td>
+			            	<td>VALOR UNITARIO</td>
+			            	<td class="superiorderecho inferiorderecho">VALOR TOTAL</td>
+			            </tr>
+			        	<tr class="superiorizquierdo inferiorizquierdo inferiorderecho superiorderecho">
+			        		<td class="superiorizquierdo colcant">1</td>
+			        		<td class="centrado widthart">Batería 1</td>
+			        		<td class="centrado">$12.000</td>
+			        		<td class="superiorderecho colvaltotal">$12.000</td>
+			        	</tr>
+			        	<tr>
+			        		<td class="colcant">1</td>
+			        		<td class="centrado">Batería 1</td>
+			        		<td class="centrado">$12.000</td>
+			        		<td class="colvaltotal">$12.000</td>
+			        	</tr>
+			        	<tr class="quinto">
+			        		<td class="colcant">1</td>
+			        		<td class="centrado">Batería 1</td>
+			        		<td class="centrado">$12.000</td>
+			        		<td class="colvaltotal">$12.000</td>
+			        	</tr>
+			        	<tr class="quinto">
+			        		<td class="colcant">1</td>
+			        		<td class="centrado">Batería 1</td>
+			        		<td class="centrado">$12.000</td>
+			        		<td class="colvaltotal">$12.000</td>
+			        	</tr>
+			        	<tr class="superiorizquierdo inferiorizquierdo inferiorderecho superiorderecho">
+			        		<td class="inferiorizquierdo colcant">1</td>
+			        		<td class="centrado">Batería 1</td>
+			        		<td class="centrado">$12.000</td>
+			        		<td class="inferiorderecho colvaltotal">$12.000</td>
+			        	</tr>
+			        </table>
+			        <!-- FIN-TERCERA PARTE DE LA FACTURA -->
+	                 
+	                <div>
+	                	<br>
+	                	<B style=" font-size: 20px; " >¿Deja batería usada?</B>
+	                	<label>
+	                		<input type="radio" name="tipo_attach" onclick="toggle(this)" value="si">Si &nbsp;
+	                	</label>
+	                	<label>
+	                		<input type="radio" name="tipo_attach" onclick="toggle(this)" value="no" checked="checked">No
+	                	</label>
+	                </div>
+
+	                <script type="text/javascript">
+				        function toggle(elemento) {
+				          if(elemento.value=="no") {
+				              document.getElementById("uno").style.display = "none";
+				           }else{
+				               if(elemento.value=="si"){
+				                   document.getElementById("uno").style.display = "block";
+				               }
+				            }
+				        }
+					</script>
+
+	                <br>
+
+	                <div id="uno" style="display:none" >
+		                <table class="tabla" >
+		                	<tr class="superiorizquierdo inferiorizquierdo inferiorderecho superiorderecho coltitles centrado">
+		                		<td class="superiorizquierdo inferiorizquierdo">Cant.</td>
+		                		<td class="superiorderecho">Artículo</td>
+		                	</tr>
+		                	<tr>
+		                		<td class="superiorizquierdo inferiorizquierdo colcant">1</td>
+		                		<td class="inferiorderecho centrado widthart">Batería x</td>
+		                	</tr>
+		                </table>
+	                </div>
+
+	                <script>
+						function habilitar(value)
+						{
+							if(value=="otro")
+							{
+								// habilitamos
+								document.getElementById("otro1").disabled=false;
+							}else{
+								// deshabilitamos
+								document.getElementById("otro1").disabled=true;
+							}
+						}
+					</script>
+
+
+	                <div class="descuento">
+		                <br>
+		                <label>
+		                	<input type="radio" name="tipo" onchange="habilitar(this.value);" value="cero" checked="checked">$0 &nbsp;
+		                </label>
+		                <label>
+		                	<input type="radio" name="tipo" onchange="habilitar(this.value);" value="diez"> $10.000 &nbsp;
+						</label>
+						<label>
+		                	<input type="radio" name="tipo" onchange="habilitar(this.value);" value="veinte"> $20.000 &nbsp;
+						</label>
+						<label>
+		                	<input type="radio" name="tipo" onchange="habilitar(this.value);" value="treinta"> $30.000 &nbsp;
+						</label>
+						<label>
+		                	<input type="radio" name="tipo" onchange="habilitar(this.value);" value="cuarenta"> $40.000 &nbsp;
+						</label>
+						<label>
+		                	<input type="radio" name="tipo" onchange="habilitar(this.value);" value="cincuenta"> $50.000 &nbsp;
+						</label>
+						<label>
+		                	<input type="radio" name="tipo" onchange="habilitar(this.value);" value="otro"> Otro &nbsp;
+						</label>
+						&nbsp;&nbsp;&nbsp; <input type="number" name="otro1" id="otro1" class="descuento_d"  placeholder="Sin puntos ni comas" disabled="">
+	                </div>
+
+
+	                <br>
+					<table class="superiorizquierdotabla inferiorizquierdotabla inferiorderechotabla superiorderechotabla anchotabla">
+						<tr class="superiorizquierdo superiorderecho">
+							<td class="superiorizquierdo lineaabajo espacio">ACEPTADA C.C ó NIT.</td>
+							<td class="superiorderecho lineaabajo espacio1">Daniel Lizarazo Calderón <br><br></td>
+						</tr>
+						<tr class="tabla">
+							<td class="lineaabajo lineaarriba"><br><br></td>
+							<td class="lineaarriba lineaabajo"><br></td>
+						</tr>
+						<tr>
+							<td class="inferiorizquierdo">Fecha de aceptación: </td>
+							<td class="inferiorderecho">NIT. #########</td>
+						</tr>
+					</table>
+					<table class="correr tabla4">
+						<tr>
+							<td class="superiorizquierdo superiorderecho primeracolumna bordeabajo">Sub Total</td>
+							<td class="superiorderecho superiorizquierdo segundacolumna bordeabajo" style="border-top: solid 1px #ffffff;">1111</td>
+						</tr>
+						<tr>
+							<td class="primeracolumna bordeabajo">IVA</td>
+							<td class="segundacolumna bordeabajo">2222</td>
+						</tr>
+						<tr>
+							<td class="inferiorizquierdo inferiorderecho primeracolumna bordeabajo">Total $</td>
+							<td class="inferiorderecho inferiorizquierdo segundacolumna borde">3333</td>
+						</tr>
+					</table>
+					<h4>Aquí va una nota.....................................................................................................................................................................................................</h4>
+					<h4>Aquí va una nota.....................................................................................................................................................................................................</h4>
+				</div>
+				
+			</div>
+		</div><!-- /container -->
+	</body>
+</html>
